@@ -8,8 +8,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.from(
-        colorScheme: ColorScheme.fromSeed(
-            brightness: Brightness.light, seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ).copyWith(
         cardTheme: CardThemeData(
           color: Colors.grey,
