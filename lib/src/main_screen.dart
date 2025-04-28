@@ -24,6 +24,11 @@ class MainScreen extends StatelessWidget {
                 ElevatedButton(onPressed: () {}, child: Text("Elevated")),
                 FilledButton(onPressed: () {}, child: Text("Filled")),
                 OutlinedButton(onPressed: () {}, child: Text("Outlined")),
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
                 CircularProgressIndicator(),
                 LinearProgressIndicator(),
                 TextField(),
