@@ -17,18 +17,9 @@ class MainScreen extends StatelessWidget {
             child: Column(
               spacing: 32,
               children: [
-                Slider(
-                  value: 0.8,
-                  onChanged: (newValue) {},
-                ),
-                Slider(
-                  value: 0.2,
-                  onChanged: (newValue) {},
-                ),
-                Switch(
-                  value: true,
-                  onChanged: (newValue) {},
-                ),
+                Slider(value: 0.8, onChanged: (newValue) {}),
+                Slider(value: 0.2, onChanged: (newValue) {}),
+                Switch(value: true, onChanged: (newValue) {}),
                 Switch(value: false, onChanged: (newValue) {}),
                 ElevatedButton(onPressed: () {}, child: Text("Elevated")),
                 FilledButton(onPressed: () {}, child: Text("Filled")),
