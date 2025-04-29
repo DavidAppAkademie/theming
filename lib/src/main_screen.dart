@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:numberpicker/numberpicker.dart';
+import 'package:shimmer/shimmer.dart';
+import 'package:theming/src/star_rating.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -24,6 +27,43 @@ class MainScreen extends StatelessWidget {
                 ElevatedButton(onPressed: () {}, child: Text("Elevated")),
                 FilledButton(onPressed: () {}, child: Text("Filled")),
                 OutlinedButton(onPressed: () {}, child: Text("Outlined")),
+                StarRating(
+                  rating: -3,
+                  starColor: Theme.of(context).colorScheme.primary,
+                ),
+                NumberPicker(
+                  value: 40,
+                  minValue: 0,
+                  maxValue: 100,
+                  onChanged: (value) {},
+                ),
+                Shimmer.fromColors(
+                  baseColor: Colors.grey[400]!,
+                  highlightColor: Colors.grey[100]!,
+                  child: Container(
+                    width: 200.0,
+                    height: 100.0,
+                    color: Colors.grey,
+                  ),
+                ),
+                Shimmer.fromColors(
+                  baseColor: Colors.grey[400]!,
+                  highlightColor: Colors.grey[100]!,
+                  child: Container(
+                    width: 200.0,
+                    height: 20.0,
+                    color: Colors.grey,
+                  ),
+                ),
+                Shimmer.fromColors(
+                  baseColor: Colors.grey[400]!,
+                  highlightColor: Colors.grey[100]!,
+                  child: Container(
+                    width: 160.0,
+                    height: 20.0,
+                    color: Colors.grey,
+                  ),
+                ),
                 Container(
                   height: 100,
                   width: 100,
