@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^6.2.1
   numberpicker: ^2.1.2
   shimmer: ^3.0.0
 
@@ -19,3 +20,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: SFProDisplay
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
+ 
