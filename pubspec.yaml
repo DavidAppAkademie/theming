@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.6
   google_fonts: ^6.2.1
   numberpicker: ^2.1.2
   shimmer: ^3.0.0
@@ -25,3 +27,25 @@ flutter:
       fonts:
         - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
  
+flutter_launcher_icons:
+  android: true
+  ios: true
+  # ios
+  image_path: "assets/images/insta_round.png"
+  remove_alpha_ios: true
+  # android
+  adaptive_icon_foreground: "assets/images/insta_round.png"
+  adaptive_icon_background: '#000000'
+
+flutter_native_splash:
+  color: '#000000'
+  #background_image: 'assets/background.png'
+  image: "assets/images/netflix.png"
+  android: true
+  ios: true
+  android_12:
+    image: assets/images/netflix.png
+    # kreis ums icon
+    icon_background_color: "#0000FF"
+    # hintergrundfarbe
+    color: "#00FF00"  
